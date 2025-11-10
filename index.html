@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="letter-card">
+            <div class="letter-header">
+                <h1>Thank You</h1>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="letter-content">
+                <div class="date" id="currentDate"></div>
+                
+                <div class="greeting">
+                    <p>Dear <span id="recipientName">Friend</span>,</p>
+                </div>
+                
+                <div class="message">
+                    <p>
+                        Hello. I would like to thank you for coming to my birthday party! I think that you joining us made it an even more fun time.
+                    </p>
+                    
+                    <p>
+                        I would like to thank you for devoting your time to joining us at Battlehouse Lake Barrington. 
+                        The look on the fith graders faces when we won the game was amazing. I would also like to thank you for your support.
+                    </p>
+                </div>
+                
+                <div class="closing">
+                    <p>With thanks,</p>
+                    <p class="signature" id="senderName">Royce Hsiao</p>
+                    <img src="Assets/Photos/Game.jpeg" alt="Game photo" class="signature-photo">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="music-button-container">
+            <img src="Assets/Photos/Button.jpeg" alt="Play music" class="music-button" id="musicButton" onclick="playMusic()">
+        </div>
+        
+    </div>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="Assets/Music/ThankYou.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
